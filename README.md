@@ -3,26 +3,36 @@ Python Project -> Tic Tac Toe game
 ------------------------------------------------------------------------------------
 This version is mainly for Jupiter notebook demostrations
 Current method line-up for this project:
-  -draw_board(board) 
-    -> Draws the board  that the game is displayed on
-  -position_pick() 
-    -> method will ask what the user to pick either the X or O symbol to play as
-  -draw_on_board(board, pinput, position) 
-    -> receives board data, position of the marker data, and what symbol is currently inrotation (x or o)
-  -win_checker(board, marker) 
-    -> checks for the possible win conditions horizontal(3 options), vertical(3 options), or diagonal win(2 options)
-  -chose_first() 
+  
+	-draw_board(board) 
+		-> Draws the board  that the game is displayed on
+  
+	-position_pick() 
+		-> method will ask what the user to pick either the X or O symbol to play as
+  
+	-draw_on_board(board, pinput, position) 
+		-> receives board data, position of the marker data, and what symbol is currently inrotation (x or o)
+  
+	-win_checker(board, marker)
+	 -> checks for the possible win conditions horizontal(3 options), vertical(3 options), or diagonal win(2 options)
+  
+	-chose_first() 
     -> this is a simple random  number generator between  1 and 2 to see who goes first
-  -is_space_empty(board, position) 
+  
+	-is_space_empty(board, position) 
     -> checks to make sure that the space is empty before continuing to the draw_on_board method
-  -full_board(board) 
+  
+	-full_board(board) 
     -> checks if the board is filled up with symbols and concludes draw if that is the case
-  -player_choice(board,player_dict) 
+  
+	-player_choice(board,player_dict) 
     -> simply prompts the player to  pick a position
-  -play_again() 
+  
+	-play_again() 
     -> asks if the player wants to play again after a win/loss or draw
-  -*execution cell* 
-    ->here the methods all get executed under certain conditions
+  
+	-*execution cell* 
+		->here the methods all get executed under certain conditions
      -creates a new 'board' list to use [' ']*10 
      -sets game_on variable to true -> this variable controls if the game look is running or now
      -curr_player = '' -> means no player data is in selection
